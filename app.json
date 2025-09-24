@@ -1,0 +1,85 @@
+{
+  "expo": {
+    "name": "BobiPlan",
+    "slug": "bobiplan",
+    "version": "1.0.0",
+    "scheme": "bobiplan",
+    "orientation": "portrait",
+    "icon": "./assets/icons/ios-light.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icons/ios-light.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#007AFF"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.luxz.bobiplan",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses camera for profile pictures",
+        "NSMicrophoneUsageDescription": "This app uses microphone for voice notes",
+        "NSLocationWhenInUseUsageDescription": "This app uses location for event locations",
+        "ITSAppUsesNonExemptEncryption": false,
+          "NSAppTransportSecurity": {
+    "NSAllowsArbitraryLoads": true
+  }
+      },
+      "buildNumber": "4",
+      "icon": {
+        "light": "./assets/icons/ios-light.png",
+        "dark": "./assets/icons/ios-dark.png",
+        "tinted": "./assets/icons/ios-tinted.png"
+      }
+    },
+    "android": {
+      "package": "com.family.bobiplan",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/ios-light.png",
+        "backgroundColor": "#007AFF"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/icons/ios-light.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icons/ios-light.png",
+          "color": "#007AFF",
+          "defaultChannel": "family-tasks"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "58a69a38-dd73-4fba-a01d-4ee386681257"
+      }
+    },
+    "owner": "luxz"
+  }
+}
